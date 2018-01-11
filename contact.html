@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MD Sifat Mahmud Limon | Web Designer</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/logo.jpg" />
+    <link rel="stylesheet" href="css/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <header role="heading">
+      
+      <a href="index.html" id="logo">
+        <h1>MD Sifat Mahmud Limon </h1>
+        <h2>Web Designer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html" class="selected">Contact</a></li>
+        </ul>
+      </nav>
+ 
+    </header>
+    <div role="content" id="wrapper">
+     
+  <div class="container">
+  <div role="Contact Details" id="secondary" style="text-align:center">
+    
+        <h3>Contact Details</h3>
+        <ul class="contact-info">
+          <li class="phone"><a href="tel:+1705-729-2329">+1 705-729-2329</a></li>
+          <li class="mail"><a href="sifatlimon01@gmail.com">sifatlimon01@gmail.com</a></li>
+          <li class="twitter"><a href="https://twitter.com/sifatlimon1">@sifatlimon1</a></li>
+          <li class="github"><a href="https://github.com/limonsifat">@limonsifat</a></li>
+          <li class="linkedin"><a href="https://www.linkedin.com/in/md-sifat-mahmud-limon-606861153/">@md-sifat-mahmud-limon</a></li>
+        </ul>
+ </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div id="form" class="column">
+<p><b>Ask your questions</b></p>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+       
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input role="submit button" type="submit" value="Submit">
+          </div>
+  </div>
+</div>
+  <footer role="footerinfo">
+        <a href="https://twitter.com/sifatlimon1"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/sifat.limon01"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
+         <a href="https://www.linkedin.com/in/md-sifat-mahmud-limon-606861153/"><img src="img/linkedin.png" alt="LinkedIn Logo" class="social-icon"></a>
+        <p>&copy; 2018 sifat limon.</p>
+      </footer>
+    </div>
+    <script>
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(44.408149, -79.673655);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 8};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0TL53w3Lfsvmxj1qbqR_XgnAjr649P-s&callback=myMap"></script>
+  </body>
+  </html>
+ 
+
