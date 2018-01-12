@@ -152,15 +152,16 @@ PAGE: ABOUT
 
 .profile-photo {
   display: block;
-  max-width: 350px;
+  max-width: 250px;
   margin: 0 auto 30px;
   border-radius: 100%;
 }
 .profile-photo:hover
 {
- -webkit-transform: scale(1.33);
-        -ms-transform: scale(1.33);
-        transform: scale(1.33);
+ -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+
 
 }/**********************************
 PAGE: CONTACT
