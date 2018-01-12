@@ -1,48 +1,86 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Sort Without Articles</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MD Sifat Mahmud Limon | Web Designer</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="img/logo.jpg" />
+    <link rel="stylesheet" href="css/normalize.css">
+   <link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header role="heading">
+      
+      <a href="index.html" id="logo">
+        <h1>MD Sifat Mahmud Limon </h1>
+        <h2>Web Designer</h2>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html" >About</a></li>
+          <li><a href="portfolio.html" class="selected">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+       </ul>
+      </nav>
+ 
+    </header>
+    <div role="content"  id="wrapper" class="secs">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: sans-serif;
-      background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      min-height: 100vh;
-    }
-    #bands {
-      list-style: inside square;
-      font-size: 20px;
-      background: white;
-      width: 500px;
-      margin: auto;
-      padding: 0;
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
-    }
-    #bands li {
-      border-bottom: 1px solid #efefef;
-      padding: 20px;
-    }
-    #bands li:last-child {
-      border-bottom: 0;
-    }
-    a {
-      color: #ffc600;
-      text-decoration: none;
-    }
-  </style>
 
-  <ul id="bands"></ul>
 
-<script>
-const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-</script>
+      <section="portfoliogallery">
+        <ul id="gallery">
+          <li class="grow">
 
-</body>
+            <a href="js/drumkit.html">
+              <img src="img/wp.jpg" alt="picture of drum">
+              <p>Drumkit with JS</p>
+            </a>
+          </li>
+          <li  class="grow">
+            <a href="js/csvari.html">
+              <img src="img/blur.jpg" alt="a blur picture">
+              <p>Playing with images by Css.</p>
+            </a>
+          </li>
+          <li class="grow">
+            <a href="js/clock.html">
+              <img src="img/clock.jpg" alt="photo of clock">
+              <p>Clock by JS</p>
+            </a>
+          </li>
+          <li class="grow">
+            <a href="js/array.html">
+              <img src="img/Creative.jpg" alt="think creative">
+              <p>Console tricks</p>
+            </a>
+          </li>
+          <li  class="grow">
+            <a href="js/sorting.html">
+              <img src="img/band.jpg" alt="name of some bands">
+              <p>Sort without article</p>
+            </a>
+          </li>
+           <li class="grow">
+            <a href="js/flex.html">
+              <img src="img/flex.jpg" alt="a gallary">
+              <p>Flex image gallary</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+  <footer role="footerinfo">
+        <a href="https://twitter.com/sifatlimon1"><img src="img/twitter.png" alt="Twitter Logo" class="social-icon"></a>
+        <a href="https://www.facebook.com/sifat.limon01"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
+         <a href="https://www.linkedin.com/in/md-sifat-mahmud-limon-606861153/"><img src="img/linkedin.png" alt="LinkedIn Logo" class="social-icon"></a>
+        <p>&copy; 2018 sifat limon.</p>
+      </footer>
+    </div>
+    
+  </body>
 </html>
